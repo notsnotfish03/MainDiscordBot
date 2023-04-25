@@ -6,7 +6,6 @@ from discord import app_commands
 from discord.ext import commands
 from hero_enum import HeroEnum
 from hero_enum import RoleEnum
-from keep_alive import keep_alive
 from itertools import cycle
 from discord.ext import tasks
 from pretty_help import PrettyHelp
@@ -118,5 +117,4 @@ async def hello(interaction: discord.Interaction):
 	await interaction.response.send_message(f"{interaction.user.mention} you is a bitch") 
   
 if __name__ == "__main__":
-    keep_alive()
     bot.run(token)
