@@ -26,6 +26,8 @@ pretty_help = PrettyHelp(
 bot.help_command = pretty_help
 status = cycle(['Overwatch 1', 'Overwatch 2'])
 
+token = hidden.secret
+
 @bot.event
 async def on_ready():
   change_status.start()
@@ -117,4 +119,4 @@ async def hello(interaction: discord.Interaction):
   
 if __name__ == "__main__":
     keep_alive()
-    bot.run(os.environ['token'])
+    bot.run(token)
