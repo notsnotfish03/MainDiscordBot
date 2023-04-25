@@ -1,6 +1,7 @@
 import discord
 import os
 import random
+import hidden
 from discord import app_commands
 from discord.ext import commands
 from hero_enum import HeroEnum
@@ -9,7 +10,6 @@ from keep_alive import keep_alive
 from itertools import cycle
 from discord.ext import tasks
 from pretty_help import PrettyHelp
-
 
 
 
